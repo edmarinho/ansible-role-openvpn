@@ -5,6 +5,7 @@
   - role: ansible-role-openvpn
 
   vars:
+    openvpn_server_hostname: dev-vpn.nibspe.com.br
     clients:
     - client1
     - client2
