@@ -2,4 +2,4 @@
 - hosts: localhost
   gather_facts: true
   roles:
-  - {role: ansible-role-openvpn, clients: [client1, client2, client3, client4, client5], openvpn_port: 4300,openvpn_push: [route 10.10.0.0 255.255.0.0], openvpn_client_to_client: true, openvpn_revoke_these_certs: []}
+  - {role: ansible-role-openvpn, clients: [client1, client2, client3, client4, client5], openvpn_port: 4300,openvpn_push: [route 10.10.0.0 255.255.0.0], openvpn_client_to_client: true, openvpn_revoke_these_certs: [], openvpn_crl_path: /etc/openvpn/keys/}
