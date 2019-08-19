@@ -5,7 +5,7 @@
   - role: ansible-role-openvpn
 
   vars:
-    openvpn_server_hostname: dev-vpn.nibspe.com.br
+    openvpn_server_hostname: vpn.nibspe.com.br
     clients:
     - diego.ramalho
     openvpn_port: 4300
